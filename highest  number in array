@@ -1,0 +1,45 @@
+using System;
+
+namespace programs_If_For_While_DoWhile
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            int numberOfDigits = Convert.ToInt32(Console.ReadLine());
+
+            int[] a = new int[numberOfDigits];
+
+
+            for (int j = 0; j < a.Length; j++)
+            {
+                a[j] = Convert.ToInt32(Console.ReadLine());
+            }
+
+            //int[] a = { 67, 50, 3, 50, 12 };
+
+
+            for (int i = 0; i < a.Length-1; i++)
+            {
+                int b = a[i];
+
+                int c = a[i + 1];
+
+                if (b > c)
+                {
+                    a[i] = c;
+                    a[i + 1] = b;
+                }
+
+
+
+            }
+
+
+
+              
+
+        }
+    }
+}
