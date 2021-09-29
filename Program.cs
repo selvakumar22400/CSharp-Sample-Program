@@ -8,12 +8,12 @@ namespace programs_If_For_While_DoWhile
         {
             Console.WriteLine("Hello World!");
 
-            //If Objname = new If();
-            //Objname.methodnameif();
-            //Switch OBjname = new Switch();
-            //OBjname.methodnameswitch();
-            //While OBJname = new While();
-            //OBJname.methodnameWHILE();
+            If Objname = new If();
+            Objname.methodnameif();
+            Switch OBjname = new Switch();
+            OBjname.methodnameswitch();
+            While OBJname = new While();
+            OBJname.methodnameWHILE();
             For OBJName = new For () ;
             OBJName.methodenamefor();
 
