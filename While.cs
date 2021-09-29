@@ -15,7 +15,7 @@ namespace programs_If_For_While_DoWhile
             {
                 rem = num % 10;//23%10=3//0
                 reverse = reverse*10 + rem;//0+3=3//
-                num = num / 10;//23/10=2
+                num = num / 10;//23/10=
             }
             
             
