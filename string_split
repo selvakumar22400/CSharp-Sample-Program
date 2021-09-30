@@ -1,0 +1,20 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace basic_program
+{
+    class string_split
+    {
+        public void split_method()
+        {
+            string s1 = "hello world";
+            string[] s2 = s1.Split(' ');
+            foreach (string s3 in s2)
+                {
+                Console.WriteLine(s3);
+            }
+        }
+
+    }
+}
