@@ -1,0 +1,44 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace basic_program
+{
+    class menu_driven
+    {
+        public void menu_driven_calc ()
+        {
+            
+            
+            Console.Write("1.addition." +
+                "2.subtraction" +
+                "3.multipliction" +
+                "4.divistion" +
+                ".5.exit" +
+                "select the any number");
+            int opt = int.Parse(Console.ReadLine());
+            Console.Write("entered the firstnumber");
+            int num1 = int.Parse(Console.ReadLine());
+            Console.Write("entered the secondnumber");
+            int num2 = int.Parse(Console.ReadLine());
+            switch (opt) {
+                case 1 :
+                    Console.WriteLine(num1 + num2);
+                    break;
+                case 2 :
+                    Console.WriteLine(num1 - num2);
+                    break;
+                case 3 :
+                    Console.WriteLine(num1 * num2);
+                    break;
+                case 4 :
+                    Console.WriteLine(num1 / num2);
+                    break;
+                case 5:
+                    break;
+
+            }
+
+        }
+    }
+}
