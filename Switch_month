@@ -1,0 +1,66 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace basic_program
+{
+    class switch_month
+    {
+        public void Switch()
+        {
+            Console.WriteLine("enter the number");
+            int opt = int.Parse(Console.ReadLine());
+            switch (opt)
+            {
+                case 1:
+                    Console.WriteLine("january");
+                    break;
+                case 2:
+                    Console.WriteLine("february");
+                    break;
+                case 3:
+                    Console.WriteLine("march");
+                    break;
+                case 4:
+                    Console.WriteLine("april");
+                    break;
+                case 5:
+                    Console.WriteLine("may");
+                    break;
+                case 6:
+                    Console.WriteLine("june");
+                    break;
+                case 7:
+                    Console.WriteLine("july");
+                    break;
+                case 8:
+                    Console.WriteLine("augest");
+                    break;
+                case 9:
+                    Console.WriteLine("septemper");
+                    break;
+                case 10:
+                    Console.WriteLine("octber");
+                    break;
+                case 11:
+                    Console.WriteLine("november");
+                    break;
+                case 12:
+                    Console.WriteLine("december");
+                    break;
+
+                default:
+                    Console.WriteLine("entered wrong number");
+                    break;
+
+
+
+
+
+
+
+            }
+
+        }
+    }
+}
