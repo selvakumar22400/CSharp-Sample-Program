@@ -1,0 +1,26 @@
+using System;
+
+namespace practice_program
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello World!");
+            string str = "my name is selva";
+            string[] splitstr = str.Split(" ");
+            string reverse = " ";
+            for (int i = 0; i <= splitstr.Length-1; i++)
+            {
+                string varname = splitstr[i];
+                for (int j = varname.Length - 1 ; j >= 0; j--)
+                {
+                    reverse = reverse + varname[j].ToString();
+                }
+
+
+            }
+            Console.WriteLine(reverse);
+        }
+    }
+}
