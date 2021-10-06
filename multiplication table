@@ -1,0 +1,26 @@
+using System;
+
+namespace convert
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            
+            int numberoftable = Convert.ToInt32(Console.ReadLine());
+            int tablelimit = Convert.ToInt32(Console.ReadLine());
+            for (int i = 1; i <= numberoftable; i++)
+            {
+                for (int j = 1; j <= tablelimit; j++)
+                {
+                    int multiplecation = i * j;
+                    Console.WriteLine(i+"*"+j+"="+multiplecation);
+                }
+                
+                    
+                
+            }
+        }
+    }
+}
+      
