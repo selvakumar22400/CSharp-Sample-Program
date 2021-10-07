@@ -1,0 +1,49 @@
+using System;
+
+namespace convert
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("maths");
+            int maths = Convert.ToInt32(Console.ReadLine());
+            Console.Write("physics");
+            int physics = Convert.ToInt32(Console.ReadLine());
+            Console.Write("chemisty");
+            int chemisty = Convert.ToInt32(Console.ReadLine());
+            int total_in_three_subjects = maths + physics + chemisty;
+            
+            
+            if (maths >= 65)
+            {
+                if (physics >= 55)
+                {
+                    if (chemisty >= 45)
+                    {
+                        if (total_in_three_subjects >= 180 || (maths + physics) >= 140 || (maths + chemisty >= 140))
+                        {
+                            Console.WriteLine("the candidate is eligible for admistion");
+
+                        }
+                    }
+                    else
+                    {
+                        Console.WriteLine("the candidate is not eligible for admistion");
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("the candidate is not eligible for admistion");
+                }
+            }
+            else
+            {
+                Console.WriteLine("the candidate is not eligible for admistion");
+            }
+
+
+        }
+    }
+}
+      
