@@ -1,0 +1,27 @@
+using System;
+
+namespace convert
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("enter rollnumber");
+            int rollnumber = Convert.ToInt32(Console.ReadLine());
+            Console.Write("enter name");
+            string name = Console.ReadLine();
+            Console.Write("enter physics mark");
+            int physics = Convert.ToInt32(Console.ReadLine());
+            Console.Write("enter chemisty mark");
+            int chemistry = Convert.ToInt32(Console.ReadLine());
+            Console.Write("enter computer science mark");
+            int computer_science  = Convert.ToInt32(Console.ReadLine());
+            int total = physics + chemistry + computer_science;
+            int avg = total / 3;
+            int percentage = avg % 100;
+            Console.WriteLine("rollnumber:{0}\n name:{1}\n physics:{2}\n chemistry:{3}\n computer science:{4} \n total:{5}\n percentage:{6} \n", rollnumber, name, physics, chemistry, computer_science, total, percentage);
+
+        }
+    }
+}
+      
