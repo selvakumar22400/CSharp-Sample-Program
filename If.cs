@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
+using System.Text
 
 namespace programs_If_For_While_DoWhile
 {
