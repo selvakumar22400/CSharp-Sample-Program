@@ -1,0 +1,21 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace sample_programs
+{
+    public class Class1
+    {
+        public static void addtion_1ton()
+        {
+            var n = Convert.ToInt32(Console.ReadLine());
+            int result = 0;
+            for(int i = 1; i <= n; i++)
+            {
+                result = result + i;
+
+            }
+            Console.WriteLine(result);
+        }
+    }
+}
