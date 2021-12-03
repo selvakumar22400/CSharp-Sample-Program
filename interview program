@@ -1,0 +1,60 @@
+=> largest_word_in_sentence
+
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace program
+{
+    class largest_word_in_sentence
+    {
+        public void largestword()
+        {
+            int count = 0;
+            string largestword = "";
+            string sentence = "my name is dhoni";
+            string[] splitstring = sentence.Split(" ");
+            for (int i = 0; i < splitstring.Length ; i++)
+            {
+                if (splitstring[i].Length > count)
+                {
+                    largestword = splitstring[i];
+                    count = splitstring[i].Length;
+                }
+            }
+            Console.WriteLine(largestword);
+        }
+    }
+}
+
+
+
+=> remove_char_from_string_
+ 
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace program
+{
+    class remove_char_from_string_
+    {
+        public void remove_char()
+        {
+            string stringname = Console.ReadLine();
+            string charname = Console.ReadLine();
+            string stringnameupper = stringname.ToUpper();
+            string charnameupper = charname.ToUpper();
+            string result = " ";
+            for (int i = 0; i <= stringnameupper.Length - 1; i++)
+            {
+                if (stringnameupper[i].ToString()!=charnameupper)
+                {
+                    result = result + stringnameupper[i];
+                }
+                
+            }
+            Console.WriteLine(result);
+        }
+    }
+}
