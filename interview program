@@ -58,3 +58,20 @@ namespace program
         }
     }
 }
+
+
+
+
+count the given charactor from the string 
+
+
+string stringname = Console.ReadLine();
+string charname =  Console.ReadLine();
+int count = 0;
+for(int i = 0 ; i<stringname.Length ; i++)
+{
+if (stringname.[i].ToString()==charname)
+{
+count++;
+}
+}
