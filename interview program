@@ -172,7 +172,7 @@ duplicate number in array:
             }
 
       
-missing number in array
+dublicate numbers in array
 
             int number = int.Parse(Console.ReadLine());
             int[] a = new int[number];
@@ -194,12 +194,39 @@ missing number in array
                     }
                 }
             }
+            
+            
+            
+missing number in array
 
             int[] first = { 1, 2, 3, 4, 5 };
 
             int[] second = { 1, 2, 0, 4, 9 };
 
             foreach (var a in first)
+            {
+                int count = 0;
+                foreach (var b in second)
+                {
+                    if (a == b)
+                    {
+                        count++;
+                        break;
+                    }
+                }
+
+                if (count == 0)
+                {
+                    Console.Write(a);
+                }
+
+            }
+            
+              int[] first = { 1,2,3,4,5};
+
+            int[] second = { 1, 2, 0, 4, 9 };
+
+            foreach(var a in first)
             {
                 int count = 0;
                 foreach (var b in second)
