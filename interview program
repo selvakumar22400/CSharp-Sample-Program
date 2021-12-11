@@ -75,3 +75,37 @@ if (stringname.[i].ToString()==charname)
 count++;
 }
 }
+
+
+
+
+duplicate number in array:
+
+ public static void DuplicateMember()
+        {
+            int number = int.Parse(Console.ReadLine());
+            int[] a = new int[number];
+            for (int i = 0; i < number; i++)
+            {
+                a[i] = int.Parse(Console.ReadLine());
+            }
+
+            List<int> duplicate = new List<int>();
+
+            for (int i = 0; i < number; i++)
+            {
+                for (int j = i + 1; j < number; j++)
+                {
+                    if (a[i] == a[j] && !duplicate.Contains(a[j]))
+                    {
+                        duplicate.Add(a[j]);
+                        Console.WriteLine();
+                    }
+                }
+            }
+
+
+        }
+    }
+}
+
