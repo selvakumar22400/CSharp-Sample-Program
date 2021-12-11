@@ -109,3 +109,25 @@ duplicate number in array:
     }
 }
 
+
+ //find the largest word in sentence
+ 
+   public void polindrome()
+        {
+           
+            int countofword = 0;
+            string largeststring = "";
+            string sentence = Console.ReadLine();
+            string[] splitsentence = sentence.Split(" ");
+            for (int i = 0; i < splitsentence.Length; i++)
+            {
+                string wordinsentence = splitsentence[i];
+                if (wordinsentence.Length > countofword)
+                {
+                    countofword = wordinsentence.Length;
+                    largeststring = wordinsentence;
+                }
+                Console.WriteLine(largeststring);
+            }
+
+
